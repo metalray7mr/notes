@@ -1,0 +1,58 @@
+vertica documentation 
+____________________________
+
+
+I . Setting up files 
+
+	1. donwload centos
+	2. download vertica community edition
+	3.download managemet console
+
+II . installing 
+
+	1. Install centos
+	2. Install vertica rpm
+		1.  #rpm -Uvh vertica-9.1.0-0.x86_64.RHEL6.rpm
+		2   #rpm -Uvh vertica-console-current-version.x86_64.RHEL6.rpm
+			//tip shared location file system  mnt/hdfs  if not work try 
+			//Linux-WinSCP
+		3. yum install dialog        //if dilog  error shows
+		4. install the scripts
+			#/opt/vertica/sbin/install_vertica --host 127.0.0.1  --rpm /root/vertica-9.1.0-0.x86_64.RHEL6.rpm --dba-user ram --failure-threshold NONE
+
+
+III. to  start server
+	
+	1. #su dbadmin   //default user for  vertica
+	2. # cd
+	3. #admintools
+		no.6  configuration menu
+		no.1 create database
+			//tip error log stored in opt/vertica/log/admintools
+
+
+
+IV. to  unintall 
+
+	1. rpm -e pacakgename      (tip  without .x86_64.rpm)
+
+
+
+
+//http://radacad.com/directquery-connection-in-power-bi-how-does-it-work-limitations-and-advantages
+
+
+// best elt tool for vertica 
+
+https://forum.vertica.com/discussion/208917/client-tools-to-query-and-etl-data
+
+// for data connection
+
+
+	DBeaver , SQuirrel
+
+
+// for ETl
+
+	Syncsort, TOAD world, andiware
+	Informatica
